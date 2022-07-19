@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "514251043431",
+    "project_id": "quality-webs-a7775",
+    "storage_bucket": "quality-webs-a7775.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:514251043431:android:ebdaca76adeac8cf4ddac2",
+        "android_client_info": {
+          "package_name": "com.firelord.qualitywebs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "514251043431-fp5rhukghl1vomsju5t5rngt7jluhcpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.firelord.qualitywebs",
+            "certificate_hash": "286963b3ce8c74af260448f7b8c8fc8bdda98cbf"
+          }
+        },
+        {
+          "client_id": "514251043431-a7qh87h0lmuev66ivqt1b41r9at1h6u6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBPyub-WkzZwXyiigGbDbv8Naivfmgzuk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "514251043431-a7qh87h0lmuev66ivqt1b41r9at1h6u6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

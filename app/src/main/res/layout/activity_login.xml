@@ -1,9 +1,111 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.LoginActivity">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfEmail"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:hint="Email ID"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tfPass"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            app:layout_constraintEnd_toEndOf="@+id/tfEmail"
+            app:layout_constraintStart_toStartOf="@+id/tfEmail"
+            app:layout_constraintTop_toBottomOf="@+id/tfEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="@+id/tfPass"
+            app:layout_constraintStart_toStartOf="@+id/tfPass"
+            app:layout_constraintTop_toBottomOf="@+id/tfPass" />
+
+        <Button
+            android:id="@+id/btGoogle"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:icon="@drawable/googleg_standard_color_18"
+            android:text="Login with Google"
+            app:layout_constraintEnd_toEndOf="@+id/btLogin"
+            app:layout_constraintHorizontal_bias="0.422"
+            app:layout_constraintStart_toStartOf="@+id/btLogin"
+            app:layout_constraintTop_toBottomOf="@+id/btLogin">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/tvNoAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/no_account_sign_up_now"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/btGoogle"
+            app:layout_constraintStart_toStartOf="@+id/btGoogle"
+            app:layout_constraintTop_toBottomOf="@+id/btGoogle" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="411dp"
+            android:layout_height="312dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_account_rafiki" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="8dp"
+            android:text="Login"
+            android:textColor="@color/black"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
